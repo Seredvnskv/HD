@@ -8,13 +8,13 @@ import time
 fake = Faker('pl_PL')
 random.seed(int(time.time()))
 
-LICZBA_CZLONKOW = 40
-LICZBA_INSTRUKTOROW = 23
-SALE = 19
+LICZBA_CZLONKOW = 1000000
+LICZBA_INSTRUKTOROW = 1000000
+SALE = 1000000
 TYPY_ZAJEC = ["Pilates","Zumba","Stretch","Yoga","Cross","Cardio","Siłownia","Fitness"]
 DOMENY = ["gmail.com", "yahoo.com", "wp.pl", "outlook.com", "onet.pl", "test.com", "o2.pl", "amazon.com"]
-LICZBA_ZAJEC = 26
-LICZBA_ZAPISOW = 40
+LICZBA_ZAJEC = 1000000
+LICZBA_ZAPISOW = 1000000
 DATA_POCZATKOWA = date(2022, 1, 1)
 DATA_KONCOWA   = date(2025, 10, 31)
 
@@ -206,7 +206,7 @@ def czlonkowie_zmiany(czlonkowie, procent_zmiany=0.1):
     for i in range(zakres_start, len(czlonkowie), 1):
         numer_czlonka, imie, nazwisko, _ = czlonkowie[i]
         czlonkowie[i][3] = generuj_email(imie, nazwisko, nowe_domeny)
-        print(f"Zmieniono emial czlonka o nr: {numer_czlonka}")
+        #print(f"Zmieniono emial czlonka o nr: {numer_czlonka}")
     return czlonkowie
 
 def instruktorzy_zmiany(instruktorzy, procent_zmiany=0.1):
@@ -219,7 +219,7 @@ def instruktorzy_zmiany(instruktorzy, procent_zmiany=0.1):
         zmiana = [s for s in TYPY_ZAJEC if s != stara_specjalizacja]
         if zmiana:
             instruktorzy[i][3] = random.choice(zmiana)
-        print(f"Zmieniono specjalizacje instruktora o nr: {numer_pracownika}")
+        #print(f"Zmieniono specjalizacje instruktora o nr: {numer_pracownika}")
     return instruktorzy
 
 def generuj_T2(czlonkowie, instruktorzy, sale, typZajec, zajecia, mapa_zajec, zapis, opinie):
@@ -232,15 +232,15 @@ def generuj_T2(czlonkowie, instruktorzy, sale, typZajec, zajecia, mapa_zajec, za
     instruktorzy_T2 = instruktorzy_zmiany(instruktorzy_T2) + generuj_instruktorow(NOWI_INSTRUKTORZY, TYPY_ZAJEC)
     
     id = len(zajecia) + 1
-    nowe_zajecia, mapa_nowe = generuj_zajecia(NOWE_ZAJECIA, instruktorzy_T2, sale_T2, TYPY_ZAJEC, start_id=id)
+    nowe_zajecia, mapa_nowe_zajecia = generuj_zajecia(NOWE_ZAJECIA, instruktorzy_T2, sale_T2, TYPY_ZAJEC, start_id=id)
+    nowe_zapisy = generuj_zapis(czlonkowie_T2, nowe_zajecia, mapa_nowe_zajecia, NOWE_ZAPISY)
+
     zajecia_T2 = zajecia + nowe_zajecia
+    zapis_T2 = zapis + nowe_zapisy
     mapa_zajec_T2 = dict(mapa_zajec)
-    mapa_zajec_T2.update(mapa_nowe)
+    mapa_zajec_T2.update(mapa_nowe_zajecia)
 
-    nowy_zapis = generuj_zapis(czlonkowie_T2, zajecia_T2, mapa_zajec_T2, NOWE_ZAPISY)
-    zapis_T2 = zapis + nowy_zapis
-
-    nowe_opinie = generuj_oceny(nowy_zapis, mapa_zajec_T2)
+    nowe_opinie = generuj_oceny(nowe_zapisy, mapa_zajec_T2)
     opinie_T2 = opinie + nowe_opinie
 
     write_csv("T2/Czlonek.csv", ["NumerKartyCzlonkowskiej","Imie","Nazwisko","Email"], czlonkowie_T2)

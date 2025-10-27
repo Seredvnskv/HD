@@ -1,3 +1,6 @@
+USE FitnessClub;
+GO
+
 SELECT * FROM Sala;
 GO
 

@@ -10,7 +10,7 @@ DELETE FROM Sala;
 GO
 
 BULK INSERT Sala
-FROM 'C:\Users\Sambor\Python\hd\T1\Sala.csv'
+FROM 'C:\Users\Sered\Desktop\HD\data_generator\T1\Sala.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
@@ -21,7 +21,7 @@ WITH (
 );
 
 BULK INSERT TypZajec
-FROM 'C:\Users\Sambor\Python\hd\T1\TypZajec.csv'
+FROM 'C:\Users\Sered\Desktop\HD\data_generator\T1\TypZajec.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
@@ -32,7 +32,7 @@ WITH (
 );
 
 BULK INSERT Instruktor
-FROM 'C:\Users\Sambor\Python\hd\T1\Instruktor.csv'
+FROM 'C:\Users\Sered\Desktop\HD\data_generator\T1\Instruktor.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
@@ -43,7 +43,7 @@ WITH (
 );
 
 BULK INSERT Czlonek
-FROM 'C:\Users\Sambor\Python\hd\T1\Czlonek.csv'
+FROM 'C:\Users\Sered\Desktop\HD\data_generator\T1\Czlonek.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
@@ -54,7 +54,7 @@ WITH (
 );
 
 BULK INSERT Zajecia
-FROM 'C:\Users\Sambor\Python\hd\T1\Zajecia.csv'
+FROM 'C:\Users\Sered\Desktop\HD\data_generator\T1\Zajecia.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
@@ -65,7 +65,7 @@ WITH (
 );
 
 BULK INSERT Zapis
-FROM 'C:\Users\Sambor\Python\hd\T1\Zapis.csv'
+FROM 'C:\Users\Sered\Desktop\HD\data_generator\T1\Zapis.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
@@ -84,7 +84,7 @@ DELETE FROM Sala;
 GO
 
 BULK INSERT Sala
-FROM 'C:\Users\Sambor\Python\hd\T2\Sala.csv'
+FROM 'C:\Users\Sered\Desktop\HD\data_generator\T2\Sala.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
@@ -95,7 +95,7 @@ WITH (
 );
 
 BULK INSERT TypZajec
-FROM 'C:\Users\Sambor\Python\hd\T2\TypZajec.csv'
+FROM 'C:\Users\Sered\Desktop\HD\data_generator\T2\TypZajec.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
@@ -106,7 +106,7 @@ WITH (
 );
 
 BULK INSERT Instruktor
-FROM 'C:\Users\Sambor\Python\hd\T2\Instruktor.csv'
+FROM 'C:\Users\Sered\Desktop\HD\data_generator\T2\Instruktor.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
@@ -117,7 +117,7 @@ WITH (
 );
 
 BULK INSERT Czlonek
-FROM 'C:\Users\Sambor\Python\hd\T2\Czlonek.csv'
+FROM 'C:\Users\Sered\Desktop\HD\data_generator\T2\Czlonek.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
@@ -128,7 +128,7 @@ WITH (
 );
 
 BULK INSERT Zajecia
-FROM 'C:\Users\Sambor\Python\hd\T2\Zajecia.csv'
+FROM 'C:\Users\Sered\Desktop\HD\data_generator\T2\Zajecia.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
@@ -139,7 +139,7 @@ WITH (
 );
 
 BULK INSERT Zapis
-FROM 'C:\Users\Sambor\Python\hd\T2\Zapis.csv'
+FROM 'C:\Users\Sered\Desktop\HD\data_generator\T2\Zapis.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
