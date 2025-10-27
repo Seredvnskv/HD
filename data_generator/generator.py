@@ -182,20 +182,20 @@ zapis = generuj_zapis(czlonkowie, zajecia, mapa_zajec, LICZBA_ZAPISOW)
 opinie = generuj_oceny(zapis, mapa_zajec)
 
 def generuj_T1(czlonkowie, instruktorzy, sale, typZajec, zajecia, zapis, opinie):
-    write_csv("hd/T1/Czlonek.csv",["NumerKartyCzlonkowskiej","Imie","Nazwisko","Email"], czlonkowie)
-    write_csv("hd/T1/Instruktor.csv",["NumerPracownika","Imie","Nazwisko","Specjalizacja"], instruktorzy)
-    write_csv("hd/T1/Sala.csv",["NumerSali","LimitMiejsc"], sale)
-    write_csv("hd/T1/TypZajec.csv",["TypZajecID","Nazwa"], typZajec)
-    write_csv("hd/T1/Zajecia.csv",["ZajeciaID","NumerSali","NumerPracownika","TypZajecID","CzasTrwania","DataZajec","Godzina"], zajecia)
-    write_csv("hd/T1/Zapis.csv",["NumerKartyCzlonkowskiej","ZajeciaID","DataZapisu","StatusZapisu","Obecny"], zapis)
-    write_excel("hd/T1/Opinie.xlsx", ["NumerKartyCzlonkowskiej","NumerSali","DataZajec","Godzina","Ocena","Komentarz"], opinie)
+    write_csv("T1/Czlonek.csv",["NumerKartyCzlonkowskiej","Imie","Nazwisko","Email"], czlonkowie)
+    write_csv("T1/Instruktor.csv",["NumerPracownika","Imie","Nazwisko","Specjalizacja"], instruktorzy)
+    write_csv("T1/Sala.csv",["NumerSali","LimitMiejsc"], sale)
+    write_csv("T1/TypZajec.csv",["TypZajecID","Nazwa"], typZajec)
+    write_csv("T1/Zajecia.csv",["ZajeciaID","NumerSali","NumerPracownika","TypZajecID","CzasTrwania","DataZajec","Godzina"], zajecia)
+    write_csv("T1/Zapis.csv",["NumerKartyCzlonkowskiej","ZajeciaID","DataZapisu","StatusZapisu","Obecny"], zapis)
+    write_excel("T1/Opinie.xlsx", ["NumerKartyCzlonkowskiej","NumerSali","DataZajec","Godzina","Ocena","Komentarz"], opinie)
 generuj_T1(czlonkowie, instruktorzy, sale, typZajec, zajecia, zapis, opinie)
 
 ## T2 ## 
 
 NOWE_ZAJECIA = 20
 NOWE_ZAPISY = 20
-NOWI_CZLONKOWIE = 15
+NOWI_CZLONKOWIE = 5
 NOWI_INSTRUKTORZY = 5
 
 def czlonkowie_zmiany(czlonkowie, procent_zmiany=0.1):
@@ -243,12 +243,12 @@ def generuj_T2(czlonkowie, instruktorzy, sale, typZajec, zajecia, mapa_zajec, za
     nowe_opinie = generuj_oceny(nowy_zapis, mapa_zajec_T2)
     opinie_T2 = opinie + nowe_opinie
 
-    write_csv("hd/T2/Czlonek.csv", ["NumerKartyCzlonkowskiej","Imie","Nazwisko","Email"], czlonkowie_T2)
-    write_csv("hd/T2/Instruktor.csv", ["NumerPracownika","Imie","Nazwisko","Specjalizacja"], instruktorzy_T2)
-    write_csv("hd/T2/Sala.csv", ["NumerSali","LimitMiejsc"], sale_T2)
-    write_csv("hd/T2/TypZajec.csv", ["TypZajecID","Nazwa"], typZajec_T2)
-    write_csv("hd/T2/Zajecia.csv", ["ZajeciaID","NumerSali","NumerPracownika","TypZajecID","CzasTrwania","DataZajec","Godzina"], zajecia_T2)
-    write_csv("hd/T2/Zapis.csv", ["NumerKartyCzlonkowskiej","ZajeciaID","DataZapisu","StatusZapisu","Obecny"], zapis_T2)
-    write_excel("hd/T2/Opinie.xlsx", ["NumerKartyCzlonkowskiej","NumerSali","DataZajec","Godzina","Ocena","Komentarz"], opinie_T2)
+    write_csv("T2/Czlonek.csv", ["NumerKartyCzlonkowskiej","Imie","Nazwisko","Email"], czlonkowie_T2)
+    write_csv("T2/Instruktor.csv", ["NumerPracownika","Imie","Nazwisko","Specjalizacja"], instruktorzy_T2)
+    write_csv("T2/Sala.csv", ["NumerSali","LimitMiejsc"], sale_T2)
+    write_csv("T2/TypZajec.csv", ["TypZajecID","Nazwa"], typZajec_T2)
+    write_csv("T2/Zajecia.csv", ["ZajeciaID","NumerSali","NumerPracownika","TypZajecID","CzasTrwania","DataZajec","Godzina"], zajecia_T2)
+    write_csv("T2/Zapis.csv", ["NumerKartyCzlonkowskiej","ZajeciaID","DataZapisu","StatusZapisu","Obecny"], zapis_T2)
+    write_excel("T2/Opinie.xlsx", ["NumerKartyCzlonkowskiej","NumerSali","DataZajec","Godzina","Ocena","Komentarz"], opinie_T2)
 
 generuj_T2(czlonkowie, instruktorzy, sale, typZajec, zajecia, mapa_zajec, zapis, opinie)
