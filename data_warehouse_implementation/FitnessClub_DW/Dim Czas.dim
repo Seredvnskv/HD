@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="308b29f4-9f09-4e6d-ae3d-a084c85562b7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b1cc6df6-2aea-4a81-b7a8-bc13883eeb57" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dim Czas</ID>
   <Name>Dim Czas</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2957" scrolltop="-7187" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8742" y="11070" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2957" scrolltop="-7187" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8276" y="11070" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
             </font>
@@ -76,17 +76,17 @@
               </Attributes>
               <Position x="20" y="20" />
             </Shape>
-            <Shape Id="Pora Dnia" Expanded="true">
-              <Attributes>
-                <Attribute Id="Pora Dnia" />
-              </Attributes>
-              <Position x="147" y="20" />
-            </Shape>
             <Shape Id="Godzina" Expanded="true">
               <Attributes>
                 <Attribute Id="Godzina" />
               </Attributes>
-              <Position x="275" y="20" />
+              <Position x="147" y="20" />
+            </Shape>
+            <Shape Id="Pora Dnia" Expanded="true">
+              <Attributes>
+                <Attribute Id="Pora Dnia" />
+              </Attributes>
+              <Position x="147" y="69" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -95,108 +95,89 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7187ca14-13a5-43e2-b5e9-ff7d7e13c5c5">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1817a0dd-2133-4c60-94be-a30b8b8e8e62">
     <DataSourceViewID>DW Fitness Club</DataSourceViewID>
   </Source>
   <Type>Time</Type>
-  <ErrorConfiguration dwd:design-time-name="519c6d29-feb4-4fdf-9172-4fd4b92abb0c">
+  <ErrorConfiguration dwd:design-time-name="0058cfd8-e6c3-4ae2-8e14-a064cf74ed96">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="8d11c211-11b1-4b3a-bc98-904b4aa9f8ca">
+    <Attribute dwd:design-time-name="8819fd6b-1c69-45c2-bc40-b2cb0caacc3a">
       <ID>ID Czas</ID>
       <Name>ID Czas</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="60bf4531-1449-4aed-acae-52f5ddb5b18a">
+        <KeyColumn dwd:design-time-name="3c62ab0b-be7d-4f9d-8d0a-d75762e1fb4c">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="15aedfed-a0df-4133-ba88-9fe56fad6556">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0adb3816-7e0a-4c2c-8162-384192c129c0">
             <TableID>dbo_Dim_Czas</TableID>
             <ColumnID>ID_Czas</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="c2dd8c1a-5156-43b1-a679-aa5a825874dd">
+        <AttributeRelationship dwd:design-time-name="f830a939-fbd2-45e0-b9ab-002d8d3ba592">
           <AttributeID>Pora Dnia</AttributeID>
           <Name>Pora Dnia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f4e91f0c-f03b-4366-954b-2eaec1e2f5e9">
+          <AttributeID>Godzina</AttributeID>
+          <Name>Godzina</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="008eee84-605d-47a8-8c28-3a60245a449f">
+    <Attribute dwd:design-time-name="5fe984e7-7812-4acd-a358-4643dbb3902f">
       <ID>Godzina</ID>
       <Name>Godzina</Name>
       <Type>Hours</Type>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4e2d86b1-6e38-4e76-97c4-cd6252c0ec7e">
+        <KeyColumn dwd:design-time-name="21964c1f-2012-4561-9aaf-dc29f0cf9b52">
           <DataType>WChar</DataType>
-          <DataSize>16</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b08fb1ae-95fb-4332-af2a-caea31248ccc">
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7337afd3-2165-4b7d-a51c-604258efb0e4">
             <TableID>dbo_Dim_Czas</TableID>
             <ColumnID>Godzina</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="8d6f61ae-77bc-4d40-8ef0-fcfe574394ba">
-        <DataType>WChar</DataType>
-        <DataSize>16</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="8ef1deca-2a84-4d1b-a49f-4c72af7596b8">
-          <TableID>dbo_Dim_Czas</TableID>
-          <ColumnID>Godzina</ColumnID>
-        </Source>
-      </NameColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="13c480e6-9f1b-4b88-9ecf-6f77ee3aaf1c">
+    <Attribute dwd:design-time-name="23bc4f17-9fbc-4610-b124-4660102e638f">
       <ID>Pora Dnia</ID>
       <Name>Pora Dnia</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d87de3a1-5c8a-41c1-85bc-56a53dc95c4c">
+        <KeyColumn dwd:design-time-name="1c6ad29a-c6e4-4457-958b-395fba515935">
           <DataType>WChar</DataType>
-          <DataSize>13</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="888f726c-fbc9-44d4-9956-07a9488f291f">
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6a962fcd-bdcf-4c09-a5dc-89836db48c2a">
             <TableID>dbo_Dim_Czas</TableID>
             <ColumnID>PoraDnia</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="6ae8784e-ecfb-4987-91d2-b8c0f9c17b65">
-        <DataType>WChar</DataType>
-        <DataSize>13</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="01191a33-c3f2-458e-a97f-e54a184f7db3">
-          <TableID>dbo_Dim_Czas</TableID>
-          <ColumnID>PoraDnia</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="0f6ae9d7-2cb8-422d-8045-26b6d8c896b4">
-          <AttributeID>Godzina</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Godzina</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="cb4fb220-8bed-4eb9-a098-7e114151e8ac">
+    <Hierarchy dwd:design-time-name="1e7f9bc5-fe05-4085-875e-ce36ab5d7f90">
       <ID>Hierarchy</ID>
       <Name>Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="f30b9068-9e0e-4597-84c2-5d2c8d71f47d">
+        <Level dwd:design-time-name="5391d586-eb4c-480f-9423-027986069432">
           <ID>Pora Dnia</ID>
           <Name>Pora Dnia</Name>
           <SourceAttributeID>Pora Dnia</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="e331a847-1ddb-40ef-8e28-770a3c8a9141">
+        <Level dwd:design-time-name="bd870624-db85-42d3-8b89-b46ad901cfab">
           <ID>Godzina</ID>
           <Name>Godzina</Name>
           <SourceAttributeID>Godzina</SourceAttributeID>

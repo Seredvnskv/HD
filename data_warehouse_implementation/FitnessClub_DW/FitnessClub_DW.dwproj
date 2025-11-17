@@ -51,6 +51,10 @@
       <Name>Dim Uczestnictwo Junk.dim</Name>
       <FullPath>Dim Uczestnictwo Junk.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Przeprowadzenie Zajec.dim</Name>
+      <FullPath>Fact Przeprowadzenie Zajec.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

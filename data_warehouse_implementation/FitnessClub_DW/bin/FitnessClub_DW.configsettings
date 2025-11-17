@@ -36,6 +36,9 @@
       <Dimension>
         <ID>Dim Uczestnictwo Junk</ID>
       </Dimension>
+      <Dimension>
+        <ID>Fact Przeprowadzenie Zajec</ID>
+      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>

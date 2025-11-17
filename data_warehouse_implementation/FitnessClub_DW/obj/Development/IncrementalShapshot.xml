@@ -26,70 +26,77 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>ZFPl1zqdmnJQs9SmzlI3beLm/hg=17.11.2025 13:13:3116.11.2025 22:11:25</TimeStamp>
+        <TimeStamp>NfUgTb/E+upYJISgcRBeKRfqxvU=17.11.2025 16:59:3716.11.2025 22:11:25</TimeStamp>
         <ID>
           <String>DW Fitness Club</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>5wxLu70JSeV5OgcU+zR//eARZno=17.11.2025 13:15:4916.11.2025 22:31:38</TimeStamp>
+        <TimeStamp>WVB/H4WkFJyXAfnyNC05qOKUBFU=17.11.2025 22:47:5816.11.2025 22:31:38</TimeStamp>
         <ID>
           <String>Dim Sala</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Vx1j/dA65WFOqgX9ccAiA+ZNehE=17.11.2025 01:33:3216.11.2025 22:31:38</TimeStamp>
+        <TimeStamp>WIfGJJzoS7ZJoswnbW/G35/ECY0=17.11.2025 22:48:3516.11.2025 22:31:38</TimeStamp>
         <ID>
           <String>Dim Typ Zajec</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>DKbQjZQcvk+Y/lWcLAOClaviXmI=17.11.2025 01:34:2016.11.2025 22:31:38</TimeStamp>
+        <TimeStamp>5AFNTAfxIC0sYigIWAz4Pgul9GM=17.11.2025 23:24:2616.11.2025 22:31:38</TimeStamp>
         <ID>
           <String>Dim Instruktor</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>N+gPf73adtdAfhxRXi0JKxRU6Vg=17.11.2025 01:23:3816.11.2025 22:31:38</TimeStamp>
+        <TimeStamp>9WmLn9Ad6EtPI0wLQA6di6Z3DFY=17.11.2025 23:14:2016.11.2025 22:31:38</TimeStamp>
         <ID>
           <String>Dim Czas</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>7dE2PwsHYDv3WvuZIY7YeD165Qg=17.11.2025 01:32:0816.11.2025 22:31:38</TimeStamp>
+        <TimeStamp>CIlcg7RB4b81PzJSUUaLGfEBW/A=17.11.2025 23:16:5016.11.2025 22:31:38</TimeStamp>
         <ID>
           <String>Dim Data</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>ozS9JFjJEPbSF5rTKkLikjZTGi4=17.11.2025 01:34:5316.11.2025 22:31:38</TimeStamp>
+        <TimeStamp>4TkeeC3FyZp9gQ5t2RcoYoSDiJ8=17.11.2025 22:54:0116.11.2025 22:31:38</TimeStamp>
         <ID>
           <String>Dim Ocena</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>48r8nHkamtELcp3TXi/2jWZtsCo=17.11.2025 01:36:0616.11.2025 22:31:38</TimeStamp>
+        <TimeStamp>29855GQPBw09nowGc13kUfRgi9I=17.11.2025 22:57:0916.11.2025 22:31:38</TimeStamp>
         <ID>
           <String>Dim Czlonek</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>YHI2OsKiycHofGUl1JCWATXRUr4=17.11.2025 01:36:3516.11.2025 22:31:38</TimeStamp>
+        <TimeStamp>C6q7wsMInl7HAul7c1jwonEO7JY=17.11.2025 22:57:3816.11.2025 22:31:38</TimeStamp>
         <ID>
           <String>Dim Uczestnictwo Junk</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ooYr4m4VxzXRfIuqzc/dFAh0RGw=17.11.2025 22:52:5817.11.2025 21:10:10</TimeStamp>
+        <ID>
+          <String>Fact Przeprowadzenie Zajec</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>B4x+mnOe0TxdyeDMLQfUS4gIJfU=17.11.2025 14:35:0016.11.2025 22:31:38yrOD0ybnyGtCh7mRB0Qnuh+JlQQ=17.11.2025 14:35:0016.11.2025 22:31:38</TimeStamp>
+        <TimeStamp>nHNnLBpTO5x+sdPyuMerYO1aZ10=18.11.2025 00:01:0816.11.2025 22:31:38wgYFPrZW6ENDg+IV9YySbD574HY=17.11.2025 19:11:2616.11.2025 22:31:38</TimeStamp>
         <ID>
           <String>DW Fitness Club</String>
         </ID>
@@ -106,5 +113,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2025-11-17T13:35:47.126667Z</LastDeployed>
+  <LastDeployed>2025-11-17T23:01:11.576667Z</LastDeployed>
 </DeploymentSnapshot>

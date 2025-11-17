@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f1d8dd86-3655-40b6-aa7e-0eb703e162d5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9777885d-0bb6-4951-a475-70a813eb8c80" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dim Typ Zajec</ID>
   <Name>Dim Typ Zajec</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2330" scrolltop="-7007" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8742" y="11070" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2330" scrolltop="-7007" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8276" y="11070" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
             </font>
@@ -68,113 +68,72 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="09556b26-1acf-46a5-a7bc-2c50cc96123b">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7fe27d7b-cb9b-4d91-bedc-94ba09380df7">
     <DataSourceViewID>DW Fitness Club</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="202c1f50-a658-489c-ba77-71a67af8ba27">
+  <ErrorConfiguration dwd:design-time-name="19e0b672-f1c6-4d5d-a236-56b07e3e0a99">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="e05311c5-7295-4ce0-89b6-f637461e517e">
+    <Attribute dwd:design-time-name="606460c7-a20c-435c-9b35-e0250428cf7a">
       <ID>ID Typ Zajec</ID>
       <Name>ID Typ Zajec</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="78955c2c-0371-40c8-86b5-a6f15b8dd1fe">
+        <KeyColumn dwd:design-time-name="b8faa90c-3bba-4382-8831-610ab3a2663d">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b1985fc-3cbd-4302-89d3-667d2c51bb55">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="50f4ad22-5814-4d6e-80b7-87724b5ceea6">
             <TableID>dbo_Dim_TypZajec</TableID>
             <ColumnID>ID_TypZajec</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="895f3102-9bb0-430b-bc9a-b7b3530ae0b3">
+        <AttributeRelationship dwd:design-time-name="6a3de887-832f-431b-bef3-64eeb69e4132">
           <AttributeID>Nazwa</AttributeID>
           <Name>Nazwa</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="83c5921c-c0a4-4594-ad19-2654b9016409">
+        <AttributeRelationship dwd:design-time-name="baab633b-06e1-491a-aea6-72e35655e827">
           <AttributeID>Kategoria Czasu Trwania</AttributeID>
           <Name>Kategoria Czasu Trwania</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c35db7c1-47ab-42eb-b0d6-33b905555db9">
-          <AttributeID>Opis</AttributeID>
-          <Name>Opis</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4bf99d83-4578-4680-a54d-ae8b329d5b3c">
+    <Attribute dwd:design-time-name="356d0f7b-eabe-4423-87ae-4934ca6f8467">
       <ID>Nazwa</ID>
       <Name>Nazwa</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0265dc71-c4ad-4dc2-8915-a7bfd1e296ae">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="183995b0-33c2-42e3-b97f-1a8505f77772">
+        <KeyColumn dwd:design-time-name="8476a93d-18b0-414b-8a4a-617a63bcdad7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="911ad87f-d568-45f3-87ce-c86b78d8d6b4">
             <TableID>dbo_Dim_TypZajec</TableID>
-            <ColumnID>ID_TypZajec</ColumnID>
+            <ColumnID>Nazwa</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="173917ea-b290-42f1-abb1-db77cfbb66f5">
-        <DataType>WChar</DataType>
-        <DataSize>50</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="d854d55b-5072-4582-b224-40fcbbbae9bd">
-          <TableID>dbo_Dim_TypZajec</TableID>
-          <ColumnID>Nazwa</ColumnID>
-        </Source>
-      </NameColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="63a47144-3754-4f8c-9224-9b3923c53974">
+    <Attribute dwd:design-time-name="db65f53d-844e-4aca-8639-6c96b2e4eda2">
       <ID>Kategoria Czasu Trwania</ID>
       <Name>Kategoria Czasu Trwania</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a774f928-fa1a-4c92-bc08-ec71b4ea9e6e">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c2894dd4-a299-457e-a597-60c1253bb291">
+        <KeyColumn dwd:design-time-name="e62866e1-297d-4859-a64e-e9201ac0b3cd">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a4357b6-e191-489b-be9b-7152740b00c9">
             <TableID>dbo_Dim_TypZajec</TableID>
-            <ColumnID>ID_TypZajec</ColumnID>
+            <ColumnID>KategoriaCzasuTrwania</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="a1296c4d-aedb-4ae2-ad5c-1af8d30112af">
-        <DataType>WChar</DataType>
-        <DataSize>7</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7b44506d-ee1f-40a4-836d-42114b713fe0">
-          <TableID>dbo_Dim_TypZajec</TableID>
-          <ColumnID>KategoriaCzasuTrwania</ColumnID>
-        </Source>
-      </NameColumn>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="4a49d34b-22bb-4f9e-bde4-e33bbcfa11b5">
-      <ID>Opis</ID>
-      <Name>Opis</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="8fa59781-fbdd-4201-a6f2-f3abdebe657e">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4f816359-7aa6-450a-b733-28453b668372">
-            <TableID>dbo_Dim_TypZajec</TableID>
-            <ColumnID>ID_TypZajec</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="965d5034-3857-4ce1-9713-7e08256c5c7a">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="c12d1fc3-b62d-429c-baa5-2c71cc14be36">
-          <TableID>dbo_Dim_TypZajec</TableID>
-          <ColumnID>Opis</ColumnID>
-        </Source>
-      </NameColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
