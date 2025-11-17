@@ -1,0 +1,2 @@
+CREATE DATABASE DW_FitnessClub
+GO

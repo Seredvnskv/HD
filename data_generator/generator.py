@@ -8,13 +8,13 @@ import time
 fake = Faker('pl_PL')
 random.seed(int(time.time()))
 
-LICZBA_CZLONKOW = 1000000
-LICZBA_INSTRUKTOROW = 1000000
-SALE = 1000000
+LICZBA_CZLONKOW = 25
+LICZBA_INSTRUKTOROW = 10
+SALE = 10
 TYPY_ZAJEC = ["Pilates","Zumba","Stretch","Yoga","Cross","Cardio","Siłownia","Fitness"]
 DOMENY = ["gmail.com", "yahoo.com", "wp.pl", "outlook.com", "onet.pl", "test.com", "o2.pl", "amazon.com"]
-LICZBA_ZAJEC = 1000000
-LICZBA_ZAPISOW = 1000000
+LICZBA_ZAJEC = 40
+LICZBA_ZAPISOW = 40
 DATA_POCZATKOWA = date(2022, 1, 1)
 DATA_KONCOWA   = date(2025, 10, 31)
 
@@ -198,20 +198,20 @@ NOWE_ZAPISY = 20
 NOWI_CZLONKOWIE = 5
 NOWI_INSTRUKTORZY = 5
 
-def czlonkowie_zmiany(czlonkowie, procent_zmiany=0.1):
+def czlonkowie_zmiany(czlonkowie, procent_zmiany=0.2):
     nowe_domeny = ["allegro.pl", "example.com", "alibaba.org", "opera.xz", "myspace.online", "xcvz.pl"]
     liczba_zmian = max(1, int(procent_zmiany * len(czlonkowie)))
-    zakres_start = max(0, len(czlonkowie) - liczba_zmian * random.randint(2,4))
+    zakres_start = max(0, len(czlonkowie) - liczba_zmian)
 
     for i in range(zakres_start, len(czlonkowie), 1):
         numer_czlonka, imie, nazwisko, _ = czlonkowie[i]
         czlonkowie[i][3] = generuj_email(imie, nazwisko, nowe_domeny)
-        #print(f"Zmieniono emial czlonka o nr: {numer_czlonka}")
+        print(f"Zmieniono emial czlonka o nr: {numer_czlonka}")
     return czlonkowie
 
-def instruktorzy_zmiany(instruktorzy, procent_zmiany=0.1):
+def instruktorzy_zmiany(instruktorzy, procent_zmiany=0.2):
     liczba_zmian = max(1, int(procent_zmiany * len(instruktorzy)))
-    zakres_start = max(0, len(instruktorzy) - liczba_zmian * random.randint(2,4))
+    zakres_start = max(0, len(instruktorzy) - liczba_zmian)
 
     for i in range(zakres_start, len(instruktorzy), 1):
         numer_pracownika = instruktorzy[i][0]
@@ -219,7 +219,7 @@ def instruktorzy_zmiany(instruktorzy, procent_zmiany=0.1):
         zmiana = [s for s in TYPY_ZAJEC if s != stara_specjalizacja]
         if zmiana:
             instruktorzy[i][3] = random.choice(zmiana)
-        #print(f"Zmieniono specjalizacje instruktora o nr: {numer_pracownika}")
+        print(f"Zmieniono specjalizacje instruktora o nr: {numer_pracownika}")
     return instruktorzy
 
 def generuj_T2(czlonkowie, instruktorzy, sale, typZajec, zajecia, mapa_zajec, zapis, opinie):

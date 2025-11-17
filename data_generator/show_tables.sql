@@ -1,4 +1,4 @@
-USE FitnessClub;
+USE FitnessClubT1;
 GO
 
 SELECT * FROM Sala;

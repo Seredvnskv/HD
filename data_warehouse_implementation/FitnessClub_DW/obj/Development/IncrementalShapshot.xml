@@ -1,0 +1,110 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>FitnessClub_DW</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>e0BCehd4sZ4ua6NekRcaJ3dkiaY=17.11.2025 00:53:1416.11.2025 22:08:21</TimeStamp>
+        <ID>
+          <String>DW Fitness Club</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>i3ygIo/vhqDo/Sgt874A0nDHwZc=16.11.2025 22:11:2516.11.2025 22:11:25</TimeStamp>
+        <ID>
+          <String>DW Fitness Club</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>AI3n6geTaEcX9AI4LZUjYcileNM=17.11.2025 01:32:4416.11.2025 22:31:38</TimeStamp>
+        <ID>
+          <String>Dim Sala</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Vx1j/dA65WFOqgX9ccAiA+ZNehE=17.11.2025 01:33:3216.11.2025 22:31:38</TimeStamp>
+        <ID>
+          <String>Dim Typ Zajec</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DKbQjZQcvk+Y/lWcLAOClaviXmI=17.11.2025 01:34:2016.11.2025 22:31:38</TimeStamp>
+        <ID>
+          <String>Dim Instruktor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>N+gPf73adtdAfhxRXi0JKxRU6Vg=17.11.2025 01:23:3816.11.2025 22:31:38</TimeStamp>
+        <ID>
+          <String>Dim Czas</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7dE2PwsHYDv3WvuZIY7YeD165Qg=17.11.2025 01:32:0816.11.2025 22:31:38</TimeStamp>
+        <ID>
+          <String>Dim Data</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ozS9JFjJEPbSF5rTKkLikjZTGi4=17.11.2025 01:34:5316.11.2025 22:31:38</TimeStamp>
+        <ID>
+          <String>Dim Ocena</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>48r8nHkamtELcp3TXi/2jWZtsCo=17.11.2025 01:36:0616.11.2025 22:31:38</TimeStamp>
+        <ID>
+          <String>Dim Czlonek</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>YHI2OsKiycHofGUl1JCWATXRUr4=17.11.2025 01:36:3516.11.2025 22:31:38</TimeStamp>
+        <ID>
+          <String>Dim Uczestnictwo Junk</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>sxyBtX/rwWhtMeyrR6WiCuZZ1zk=16.11.2025 23:33:4916.11.2025 22:31:38j1a3/+dGooUYK35ZawY8JtFDWso=16.11.2025 22:31:3816.11.2025 22:31:38</TimeStamp>
+        <ID>
+          <String>DW Fitness Club</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>jXMGKfhIr5zlF5t7tSYzd3Brnes=16.11.2025 21:09:5616.11.2025 21:09:56</TimeStamp>
+      <ID>
+        <String>FitnessClub_DW</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2025-11-17T00:36:50.323333Z</LastDeployed>
+</DeploymentSnapshot>
