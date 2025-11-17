@@ -19,21 +19,21 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>e0BCehd4sZ4ua6NekRcaJ3dkiaY=17.11.2025 00:53:1416.11.2025 22:08:21</TimeStamp>
+        <TimeStamp>0oQ0O9896lgoUJ/BKu9AgeNnaUs=17.11.2025 13:13:3116.11.2025 22:08:21</TimeStamp>
         <ID>
           <String>DW Fitness Club</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>i3ygIo/vhqDo/Sgt874A0nDHwZc=16.11.2025 22:11:2516.11.2025 22:11:25</TimeStamp>
+        <TimeStamp>ZFPl1zqdmnJQs9SmzlI3beLm/hg=17.11.2025 13:13:3116.11.2025 22:11:25</TimeStamp>
         <ID>
           <String>DW Fitness Club</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>AI3n6geTaEcX9AI4LZUjYcileNM=17.11.2025 01:32:4416.11.2025 22:31:38</TimeStamp>
+        <TimeStamp>5wxLu70JSeV5OgcU+zR//eARZno=17.11.2025 13:15:4916.11.2025 22:31:38</TimeStamp>
         <ID>
           <String>Dim Sala</String>
         </ID>
@@ -89,7 +89,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>sxyBtX/rwWhtMeyrR6WiCuZZ1zk=16.11.2025 23:33:4916.11.2025 22:31:38j1a3/+dGooUYK35ZawY8JtFDWso=16.11.2025 22:31:3816.11.2025 22:31:38</TimeStamp>
+        <TimeStamp>B4x+mnOe0TxdyeDMLQfUS4gIJfU=17.11.2025 14:35:0016.11.2025 22:31:38yrOD0ybnyGtCh7mRB0Qnuh+JlQQ=17.11.2025 14:35:0016.11.2025 22:31:38</TimeStamp>
         <ID>
           <String>DW Fitness Club</String>
         </ID>
@@ -106,5 +106,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2025-11-17T00:36:50.323333Z</LastDeployed>
+  <LastDeployed>2025-11-17T13:35:47.126667Z</LastDeployed>
 </DeploymentSnapshot>

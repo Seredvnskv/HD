@@ -1,10 +1,10 @@
 USE DW_FitnessClub
 GO
 
-INSERT INTO Dim_Sala (NumerSali, KategoriaWielkosci) VALUES 
-(1, N'mała'),
-(2, N'średnia'),
-(3, N'duża');
+INSERT INTO Dim_Sala (NumerSali, LimitMiejsc, KategoriaWielkosci) VALUES 
+(1, 9, N'mała'),
+(2, 18, N'średnia'),
+(3, 27, N'duża');
 GO
 
 INSERT INTO Dim_TypZajec (Nazwa, KategoriaCzasuTrwania, Opis) VALUES
@@ -14,21 +14,21 @@ INSERT INTO Dim_TypZajec (Nazwa, KategoriaCzasuTrwania, Opis) VALUES
 GO
 
 INSERT INTO Dim_Czlonek (NumerKartyCzlonkowskiej, ImieINazwisko, Email, KategoriaStazu, IsCurrent) VALUES
-('1001', N'Jan Kowalski', 'jan.k@example.com', 'Nowicjusz', 1),
-('1002', N'Anna Nowak', 'anna.n@example.com', 'Zaawansowany', 1),
-('1003', N'Marek Zielinski', 'marek.z@example.com', 'Weteran', 1);
+('MCFAOW3520', N'Fabian Owsianka', 'fabian.owsianka@wp.pl', 'Nowicjusz', 1),
+('MCJUDZ2883', N'Julita Działa', 'julita.dziala@test.com', 'Zaawansowany', 1),
+('MCMAMA7973', N'Marcelina Małocha', 'marcelina.malocha@outlook.com', 'Weteran', 1);
 GO
 
 INSERT INTO Dim_Instruktor (NumerPracownika, ImieINazwisko, Specjalizacja, KategoriaStazu, IsCurrent) VALUES
-('I001', N'Karol Maj', 'Yoga', N'początkujący', 1),
-('I002', N'Paulina Karp', 'Crossfit', N'średnio doświadczony', 1),
-('I003', N'Tomasz Lewandowski', 'Spinning', N'doświadczony', 1);
+('WNMASI7472', N'Karol Maj', 'Yoga', N'początkujący', 1),
+('WNSAZA3777', N'Paulina Karp', 'Crossfit', N'średnio doświadczony', 1),
+('WNROKU2025', N'Tomasz Lewandowski', 'Spinning', N'doświadczony', 1);
 GO
 
 INSERT INTO Dim_Data (Data, Rok, Miesiac, NumerMiesiaca, Dzien, DzienTygodnia, NumerDniaTygodnia, Weekend, Swieta, Wakacje) VALUES
 ('2024-05-10', 2024, 'May', 5, 10, 'Friday', 5, 'dzień pracujący', 'Brak', 'brak wakacji'),
-('2024-05-11', 2024, 'May', 5, 11, 'Saturday', 6, 'weekend', 'Brak', 'brak wakacji'),
-('2024-05-12', 2024, 'May', 5, 12, 'Sunday', 7, 'weekend', 'Brak', 'brak wakacji');
+('2024-01-13', 2024, 'January', 1, 13,'Saturday', 6, 'weekend', 'Brak', 'brak wakacji'),
+('2024-02-05', 2024, 'February', 2, 5, 'Monday', 1, 'dzień pracujący', 'Brak', 'brak wakacji');
 GO
 
 INSERT INTO Dim_Czas (Godzina, PoraDnia) VALUES
@@ -38,9 +38,10 @@ INSERT INTO Dim_Czas (Godzina, PoraDnia) VALUES
 GO
 
 INSERT INTO Dim_Ocena (Ocena, Komentarz) VALUES
-('5', N'Zajęcia świetne'),
-('4', N'Dobre zajęcia'),
-('3', N'Przeciętnie'),
+('1', N'bardzo źle'),
+('3', N'średnie zajęcia'),
+('4', N'dobre zajęcia'),
+('5', N'rewelacyjne zajęcia'),
 ('brak oceny', N'Brak komentarza');
 GO
 
@@ -64,7 +65,21 @@ GO
 INSERT INTO Fact_Uczestnictwo
 (ID_PrzeprowadzenieZajec, ID_Czlonek, ID_Ocena, ID_Junk, Ocena, StazWKlubie)
 VALUES
-(1, 1, 1, 1, 5.0, 0.4),
-(1, 2, 2, 3, 4.0, 1.5),
-(2, 3, 3, 1, 3.0, 2.2);
+    -- Fabian na jodze, obecny, dobra ocena
+    (1, 1, 3, 1, 4, 0.3),
+
+    -- Julita na jodze, obecna, najwyższa ocena
+    (1 ,2, 4, 1, 5, 1.0),
+
+    -- Marcelina zapisała się na jogę, ale nie przyszła, brak oceny
+    (1, 3, 5, 2, NULL, 2.5),
+
+    -- Fabian na CrossFit, obecny, średnia ocena
+    (2, 1, 2, 1, 3, 0.5),
+
+    -- Julita na CrossFit, obecna, wysoka ocena
+    (2, 2, 4, 1, 5, 1.2),
+
+    -- Marcelina na Spinningu, obecna, bardzo dobra ocena
+    (3, 3, 4, 1, 5, 3.0);
 GO

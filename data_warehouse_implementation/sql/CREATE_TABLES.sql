@@ -114,6 +114,6 @@ CREATE TABLE Fact_Uczestnictwo
     ID_Czlonek INTEGER NOT NULL REFERENCES Dim_Czlonek(ID_Czlonek),
     ID_Ocena INTEGER NULL REFERENCES Dim_Ocena(ID_Ocena),
     ID_Junk INTEGER NOT NULL REFERENCES Dim_Uczestnictwo_Junk(ID_Junk),
-    Ocena NUMERIC(3,2) NOT NULL,
+    Ocena NUMERIC(3,2) NULL,
     StazWKlubie NUMERIC(5,2) NOT NULL,
 )
