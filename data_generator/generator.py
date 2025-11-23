@@ -8,13 +8,13 @@ import time
 fake = Faker('pl_PL')
 random.seed(int(time.time()))
 
-LICZBA_CZLONKOW = 25
-LICZBA_INSTRUKTOROW = 10
-SALE = 10
+LICZBA_CZLONKOW = 30
+LICZBA_INSTRUKTOROW = 5
+SALE = 8
 TYPY_ZAJEC = ["Pilates","Zumba","Stretch","Yoga","Cross","Cardio","Siłownia","Fitness"]
 DOMENY = ["gmail.com", "yahoo.com", "wp.pl", "outlook.com", "onet.pl", "test.com", "o2.pl", "amazon.com"]
-LICZBA_ZAJEC = 40
-LICZBA_ZAPISOW = 40
+LICZBA_ZAJEC = 30
+LICZBA_ZAPISOW = 400
 DATA_POCZATKOWA = date(2022, 1, 1)
 DATA_KONCOWA   = date(2025, 10, 31)
 
@@ -159,18 +159,31 @@ def generuj_zapis(czlonkowie, zajecia_rows, mapa_zajec, liczba_zapisow):
     
     return wiersze
 
-def generuj_oceny(zapis, mapa_zajec):    
+def generuj_oceny(zapis, mapa_zajec, prawd_braku_oceny=0.10):   # 10% bez oceny
     wiersze = []
     obecni_czlonkowie = [wiersz for wiersz in zapis if wiersz[4] == 1]
-    
+
     for i in range(len(obecni_czlonkowie)):
         numer_karty_czlonkowskiej = obecni_czlonkowie[i][0]
         zajecia_id = obecni_czlonkowie[i][1]
         numer_sali, data_zajec, godzina = mapa_zajec[zajecia_id]
-        ocena = random.randint(1,5)
-        komentarz = losuj_komentarz(ocena)
-        wiersze.append([numer_karty_czlonkowskiej, numer_sali, str(data_zajec), godzina, ocena, komentarz])
-    
+
+        if random.random() < prawd_braku_oceny:
+            ocena = None
+            komentarz = "brak komentarza"
+        else:
+            ocena = random.randint(1, 5)
+            komentarz = losuj_komentarz(ocena)
+
+        wiersze.append([
+            numer_karty_czlonkowskiej,
+            numer_sali,
+            str(data_zajec),
+            godzina,
+            ocena,
+            komentarz
+        ])
+
     return wiersze
 
 czlonkowie = generuj_czlonkow(LICZBA_CZLONKOW)
@@ -188,8 +201,11 @@ def generuj_T1(czlonkowie, instruktorzy, sale, typZajec, zajecia, zapis, opinie)
     write_csv("T1/TypZajec.csv",["TypZajecID","Nazwa"], typZajec)
     write_csv("T1/Zajecia.csv",["ZajeciaID","NumerSali","NumerPracownika","TypZajecID","CzasTrwania","DataZajec","Godzina"], zajecia)
     write_csv("T1/Zapis.csv",["NumerKartyCzlonkowskiej","ZajeciaID","DataZapisu","StatusZapisu","Obecny"], zapis)
+    write_csv("T1/Opinie.csv", ["NumerKartyCzlonkowskiej","NumerSali","DataZajec","Godzina","Ocena","Komentarz"], opinie)
     write_excel("T1/Opinie.xlsx", ["NumerKartyCzlonkowskiej","NumerSali","DataZajec","Godzina","Ocena","Komentarz"], opinie)
 generuj_T1(czlonkowie, instruktorzy, sale, typZajec, zajecia, zapis, opinie)
+
+'''
 
 ## T2 ## 
 
@@ -251,4 +267,4 @@ def generuj_T2(czlonkowie, instruktorzy, sale, typZajec, zajecia, mapa_zajec, za
     write_csv("T2/Zapis.csv", ["NumerKartyCzlonkowskiej","ZajeciaID","DataZapisu","StatusZapisu","Obecny"], zapis_T2)
     write_excel("T2/Opinie.xlsx", ["NumerKartyCzlonkowskiej","NumerSali","DataZajec","Godzina","Ocena","Komentarz"], opinie_T2)
 
-generuj_T2(czlonkowie, instruktorzy, sale, typZajec, zajecia, mapa_zajec, zapis, opinie)
+generuj_T2(czlonkowie, instruktorzy, sale, typZajec, zajecia, mapa_zajec, zapis, opinie) '''
