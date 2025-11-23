@@ -153,8 +153,8 @@ def generuj_zapis(czlonkowie, zajecia_rows, mapa_zajec, liczba_zapisow):
         data_zapisu = data_zajec - timedelta(days=random.randint(1, 30))
         if data_zapisu < DATA_POCZATKOWA:
             data_zapisu = DATA_POCZATKOWA
-        status = random.choices(["Aktywny", "Anulowany"], weights=[0.85, 0.15])[0]
-        obecny = 0 if status == "Anulowany" else random.choices([0, 1], weights=[0.1, 0.9])[0]
+        status = random.choices(["Aktywny", "Anulowany"], weights=[0.98, 0.02])[0]
+        obecny = 0 if status == "Anulowany" else random.choices([0, 1], weights=[0.05, 0.95])[0]
         wiersze.append([numer_karty_czlonkowskiej, zajecia_id, str(data_zapisu), status, obecny])
     
     return wiersze
