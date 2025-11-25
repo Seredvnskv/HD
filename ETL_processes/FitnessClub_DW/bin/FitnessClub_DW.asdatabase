@@ -1799,7 +1799,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3935" scrolltop="2860" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="80" x="14817" y="16320" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="49" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3935" scrolltop="5729" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="80" x="19643" y="16320" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
                 </font>
@@ -1920,10 +1920,10 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="10397" top="7573" logicalid="30" controlid="11" masterid="0" hint1="0" hint2="0" width="2915" height="947" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="10397" top="7573" logicalid="40" controlid="21" masterid="0" hint1="0" hint2="0" width="2915" height="947" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
@@ -1940,10 +1940,10 @@
                   <point x="13012" y="8220" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="13799" top="8514" logicalid="31" controlid="12" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="13799" top="8514" logicalid="41" controlid="22" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
@@ -1958,10 +1958,10 @@
                   <point x="14198" y="8814" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="13248" top="2528" logicalid="32" controlid="13" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="13248" top="2528" logicalid="42" controlid="23" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
@@ -1978,10 +1978,10 @@
                   <point x="13648" y="5427" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="17284" top="6171" logicalid="33" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="17284" top="6171" logicalid="43" controlid="24" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
@@ -1996,10 +1996,10 @@
                   <point x="17584" y="6570" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="9761" top="12372" logicalid="34" controlid="15" masterid="0" hint1="0" hint2="0" width="3916" height="3689" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="9761" top="12372" logicalid="44" controlid="25" masterid="0" hint1="0" hint2="0" width="3916" height="3689" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
@@ -2016,10 +2016,10 @@
                   <point x="10061" y="12672" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="9211" top="12372" logicalid="35" controlid="16" masterid="0" hint1="0" hint2="0" width="1742" height="10914" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="9211" top="12372" logicalid="45" controlid="26" masterid="0" hint1="0" hint2="0" width="1742" height="10914" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
@@ -2036,10 +2036,10 @@
                   <point x="9511" y="12672" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="6080" top="12372" logicalid="36" controlid="17" masterid="0" hint1="0" hint2="0" width="981" height="10914" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="6461" top="12372" logicalid="46" controlid="27" masterid="0" hint1="0" hint2="0" width="968" height="10914" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
@@ -2049,17 +2049,17 @@
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
                 </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="4" sourceattachpoint="10" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="6479" y="22786" />
-                  <point x="6479" y="17729" />
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="4" sourceattachpoint="12" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="7029" y="22786" />
+                  <point x="7029" y="17729" />
                   <point x="6761" y="17729" />
                   <point x="6761" y="12672" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="6827" top="4794" logicalid="37" controlid="18" masterid="0" hint1="0" hint2="0" width="799" height="3178" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="6827" top="4794" logicalid="47" controlid="28" masterid="0" hint1="0" hint2="0" width="799" height="3178" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
@@ -2076,10 +2076,10 @@
                   <point x="7311" y="7672" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="3340" top="9243" logicalid="38" controlid="19" masterid="0" hint1="0" hint2="0" width="3085" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="3340" top="9243" logicalid="48" controlid="29" masterid="0" hint1="0" hint2="0" width="3085" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
@@ -2117,7 +2117,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>2860</Value>
+          <Value>5729</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -2974,7 +2974,7 @@ VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Fact Przeprowadzenie Zajec'  ; </Text
                 <Name>_ALL_TABLES_</Name>
                 <DiagramLayout>
                   <dds>
-                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4980" scrolltop="-471" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="22500" y="17611" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="49" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4980" scrolltop="-471" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="22500" y="17611" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                       <font>
                         <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
                       </font>
@@ -3095,7 +3095,7 @@ VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Fact Przeprowadzenie Zajec'  ; </Text
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="9672" top="7083" logicalid="30" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="843" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="9672" top="7083" logicalid="40" controlid="21" masterid="0" hint1="0" hint2="0" width="3000" height="843" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -3115,7 +3115,7 @@ VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Fact Przeprowadzenie Zajec'  ; </Text
                         <point x="12372" y="7383" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="13159" top="8227" logicalid="31" controlid="12" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="13159" top="8227" logicalid="41" controlid="22" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -3133,7 +3133,7 @@ VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Fact Przeprowadzenie Zajec'  ; </Text
                         <point x="13558" y="8527" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="16644" top="5334" logicalid="32" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="16644" top="5334" logicalid="42" controlid="23" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -3151,7 +3151,7 @@ VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Fact Przeprowadzenie Zajec'  ; </Text
                         <point x="16944" y="5733" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="13159" top="2241" logicalid="33" controlid="14" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="13159" top="2241" logicalid="43" controlid="24" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -3169,7 +3169,7 @@ VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Fact Przeprowadzenie Zajec'  ; </Text
                         <point x="13558" y="5140" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="5636" top="4327" logicalid="34" controlid="15" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="5636" top="4327" logicalid="44" controlid="25" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -3189,7 +3189,7 @@ VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Fact Przeprowadzenie Zajec'  ; </Text
                         <point x="6036" y="7226" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="9036" top="11926" logicalid="35" controlid="16" masterid="0" hint1="0" hint2="0" width="4382" height="3848" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="9036" top="11926" logicalid="45" controlid="26" masterid="0" hint1="0" hint2="0" width="4382" height="3848" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -3209,7 +3209,7 @@ VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Fact Przeprowadzenie Zajec'  ; </Text
                         <point x="9336" y="12226" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="8486" top="11926" logicalid="36" controlid="17" masterid="0" hint1="0" hint2="0" width="960" height="9274" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="8486" top="11926" logicalid="46" controlid="27" masterid="0" hint1="0" hint2="0" width="960" height="9274" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -3229,7 +3229,7 @@ VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Fact Przeprowadzenie Zajec'  ; </Text
                         <point x="8786" y="12226" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="2700" top="8776" logicalid="37" controlid="18" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="2700" top="8776" logicalid="47" controlid="28" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -3249,7 +3249,7 @@ VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Fact Przeprowadzenie Zajec'  ; </Text
                         <point x="5400" y="9176" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="5610" top="11926" logicalid="38" controlid="19" masterid="0" hint1="0" hint2="0" width="799" height="9274" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="5610" top="11926" logicalid="48" controlid="29" masterid="0" hint1="0" hint2="0" width="799" height="9274" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -3427,7 +3427,7 @@ VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Fact Przeprowadzenie Zajec'  ; </Text
                       <xs:element name="KategoriaStazu" msprop:design-time-name="c58a9d79-8d95-4be6-8517-3e0707463250" msprop:DbColumnName="KategoriaStazu" msprop:FriendlyName="KategoriaStazu">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
-                            <xs:maxLength value="20" />
+                            <xs:maxLength value="50" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>

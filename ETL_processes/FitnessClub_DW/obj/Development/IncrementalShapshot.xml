@@ -26,7 +26,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>NfUgTb/E+upYJISgcRBeKRfqxvU=17.11.2025 16:59:3723.11.2025 16:44:08</TimeStamp>
+        <TimeStamp>rStnAQpmWkIgsxGMDZpuFj1NQUk=25.11.2025 00:43:2823.11.2025 16:44:08</TimeStamp>
         <ID>
           <String>DW Fitness Club</String>
         </ID>
@@ -96,7 +96,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>QYkTWTolkN40S/368AGIdCtQcJE=18.11.2025 14:19:1523.11.2025 16:44:08wgYFPrZW6ENDg+IV9YySbD574HY=17.11.2025 19:11:2623.11.2025 16:44:08</TimeStamp>
+        <TimeStamp>ix6I8WvmZo7woF3O9Uc26of+fMA=25.11.2025 00:43:2823.11.2025 16:44:08wgYFPrZW6ENDg+IV9YySbD574HY=17.11.2025 19:11:2623.11.2025 16:44:08</TimeStamp>
         <ID>
           <String>DW Fitness Club</String>
         </ID>
@@ -113,5 +113,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2025-11-23T22:02:45.946667Z</LastDeployed>
+  <LastDeployed>2025-11-24T23:52:00.396667Z</LastDeployed>
 </DeploymentSnapshot>

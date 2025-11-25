@@ -35,9 +35,9 @@ SELECT
     ImieINazwisko,
     Specjalizacja,
     CASE
-        WHEN StazLat < 1.0 THEN N'Początkujący'
-        WHEN StazLat < 3.0 THEN N'Średnio doświadczony'
-        ELSE N'Doświadczony'
+        WHEN StazLat < 1.0 THEN 'Poczatkujacy'
+        WHEN StazLat < 3.0 THEN 'Srednio doswiadczony'
+        ELSE 'Doswiadczony'
     END AS KategoriaStazu,
     IsCurrent
 FROM

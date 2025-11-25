@@ -9,9 +9,9 @@ AS
 SELECT DISTINCT
 	[Nazwa],
 	CASE
-		WHEN [CzasTrwania] <= 45 THEN N'krótkie'
-		WHEN [CzasTrwania] BETWEEN 46 AND 89 THEN N'średnie'
-		ELSE N'długie'
+		WHEN [CzasTrwania] <= 45 THEN 'krotkie'
+		WHEN [CzasTrwania] BETWEEN 46 AND 89 THEN 'srednie'
+		ELSE 'dlugie'
 	END AS [KategoriaCzasuTrwania]
 FROM [FitnessClub].dbo.[TypZajec]
 JOIN [FitnessClub].dbo.[Zajecia] on [FitnessClub].dbo.[Zajecia].[TypZajecID] = [FitnessClub].dbo.[TypZajec].[TypZajecID]

@@ -9,9 +9,9 @@ AS
 SELECT DISTINCT
 	[NumerSali],
 	CASE
-		WHEN [LimitMiejsc] < 10 THEN N'mała'
-		WHEN [LimitMiejsc] BETWEEN 10 AND 20 THEN N'średnia'
-		ELSE N'duża'
+		WHEN [LimitMiejsc] < 10 THEN 'mala'
+		WHEN [LimitMiejsc] BETWEEN 10 AND 20 THEN N'srednia'
+		ELSE 'duza'
 	END AS [KategoriaWielkosci]
 FROM [FitnessClub].dbo.[Sala]
 ;
