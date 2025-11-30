@@ -72,7 +72,7 @@ SELECT
 	GO
 
 
-
+/*
 INSERT INTO DW_FitnessClub.dbo.Fact_Uczestnictwo (
     ID_PrzeprowadzenieZajec,
     ID_Czlonek,
@@ -90,8 +90,25 @@ SELECT
     StazWKlubie
 FROM
     vETLFUczestnictwo;
-GO
+GO */
 
+MERGE INTO DW_FitnessClub.dbo.Fact_Uczestnictwo AS TT
+	USING vETLFUczestnictwo AS ST
+		ON TT.ID_PrzeprowadzenieZajec = ST.ID_PrzeprowadzenieZajec
+		AND TT.ID_Czlonek = ST.ID_Czlonek
+		AND TT.ID_Ocena = ST.ID_Ocena
+		AND TT.ID_Junk = ST.ID_Junk
+			WHEN NOT MATCHED
+				THEN 
+					INSERT VALUES 
+					(
+					ST.ID_PrzeprowadzenieZajec, 
+					ST.ID_Czlonek, 
+					ST.ID_Ocena, 
+					ST.ID_Junk,
+					ST.Ocena,
+					ST.StazWKlubie
+					);
 
 DROP VIEW vETLFUczestnictwo;
 GO

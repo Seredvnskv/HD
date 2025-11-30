@@ -17,12 +17,27 @@ FROM [FitnessClub].dbo.[Sala]
 ;
 GO
 
+/*
 INSERT INTO Dim_Sala (NumerSali, KategoriaWielkosci)
 SELECT 
 	[NumerSali],
 	[KategoriaWielkosci]
 FROM vETLDIM_SALA;
-GO
+GO */
+
+MERGE INTO Dim_Sala AS TT
+	USING vETLDIM_SALA AS ST
+		ON TT.NumerSali = ST.NumerSali
+		AND TT.KategoriaWielkosci = ST.KategoriaWielkosci
+			WHEN NOT MATCHED
+				THEN 
+					INSERT VALUES 
+					(
+						ST.NumerSali,
+						ST.KategoriaWielkosci
+					)
+			WHEN NOT MATCHED BY SOURCE
+				THEN DELETE;
 
 DROP VIEW vETLDIM_SALA;
 GO

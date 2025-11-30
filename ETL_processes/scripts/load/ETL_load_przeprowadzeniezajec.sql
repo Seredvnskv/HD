@@ -117,7 +117,7 @@ LEFT JOIN StazInstruktora AS si ON z.NumerPracownika = si.NumerPracownika
 LEFT JOIN SredniStazNaZajeciach AS ssz ON z.ZajeciaID = ssz.ZajeciaID;
 GO
 
-
+/*
 INSERT INTO DW_FitnessClub.dbo.Fact_PrzeprowadzenieZajec (
     ID_Instruktor,
     ID_TypZajec,
@@ -151,7 +151,34 @@ SELECT
     SredniStazUczestnikow
 FROM
     vETLFPrzeprowadzenieZajec;
-GO
+GO */
+
+MERGE INTO DW_FitnessClub.dbo.Fact_PrzeprowadzenieZajec AS TT
+	USING vETLFPrzeprowadzenieZajec AS ST
+		ON TT.ID_Instruktor = ST.ID_Instruktor
+		AND TT.ID_TypZajec = ST.ID_TypZajec
+		AND TT.ID_Sala = ST.ID_Sala
+		AND TT.ID_Data = ST.ID_Data
+		AND TT.ID_Czas = ST.ID_Czas
+			WHEN NOT MATCHED
+				THEN
+					INSERT VALUES
+					(
+						ST.ID_Instruktor,
+						ST.ID_TypZajec,
+						ST.ID_Sala,
+						ST.ID_Data,
+						ST.ID_Czas,
+						ST.LimitMiejsc,
+						ST.LiczbaZapisanych,
+						ST.LiczbaObecnych,
+						ST.Frekwencja,
+						ST.CzasTrwaniaMin,
+						ST.SredniaOcena,
+						ST.ProcentZapelnienia,
+						ST.StazWKlubieInstruktor,
+						ST.SredniStazUczestnikow
+					);
 
 DROP VIEW vETLFPrzeprowadzenieZajec;
 GO
