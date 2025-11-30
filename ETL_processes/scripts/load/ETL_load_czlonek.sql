@@ -49,6 +49,7 @@ FROM CzlonekT
 
 GO
 
+/*
 INSERT INTO Dim_Czlonek
     (NumerKartyCzlonkowskiej, ImieINazwisko, Email, KategoriaStazu, IsCurrent)
 SELECT 
@@ -58,7 +59,27 @@ SELECT
     KategoriaStazu,
     IsCurrent
 FROM vETLDim_Czlonek;
-GO
+GO */
+
+MERGE INTO Dim_Czlonek AS TT
+    USING vETLDim_Czlonek AS ST
+        ON TT.NumerKartyCzlonkowskiej = ST.NumerKartyCzlonkowskiej
+            WHEN NOT MATCHED 
+                    THEN 
+                        INSERT (NumerKartyCzlonkowskiej, ImieINazwisko, Email, KategoriaStazu, IsCurrent)
+                        VALUES (ST.NumerKartyCzlonkowskiej, ST.ImieINazwisko, ST.Email, ST.KategoriaStazu, 1)
+            WHEN MATCHED
+                AND (ST.Email <> TT.Email
+                OR ST.KategoriaStazu <> TT.KategoriaStazu)
+            THEN 
+                UPDATE SET TT.IsCurrent = 0;
+
+INSERT INTO Dim_Czlonek (NumerKartyCzlonkowskiej, ImieINazwisko, Email, KategoriaStazu, IsCurrent)
+SELECT NumerKartyCzlonkowskiej, ImieINazwisko, Email, KategoriaStazu, 1
+FROM vETLDim_Czlonek
+EXCEPT
+SELECT NumerKartyCzlonkowskiej, ImieINazwisko, Email, KategoriaStazu, 1
+FROM Dim_Czlonek;
 
 DROP VIEW vETLDim_Czlonek;
 GO

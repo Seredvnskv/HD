@@ -44,6 +44,7 @@ FROM
     InstruktorT;
 GO
 
+/*
 INSERT INTO Dim_Instruktor
     (NumerPracownika, ImieINazwisko, Specjalizacja, KategoriaStazu, IsCurrent)
 SELECT 
@@ -53,7 +54,27 @@ SELECT
     KategoriaStazu,
     IsCurrent
 FROM vETLDim_Instruktor;
-GO
+GO */
+
+MERGE INTO Dim_Instruktor AS TT
+    USING vETLDim_Instruktor AS ST
+        ON TT.NumerPracownika = ST.NumerPracownika
+            WHEN NOT MATCHED
+                THEN
+                    INSERT (NumerPracownika, ImieINazwisko, Specjalizacja, KategoriaStazu, IsCurrent)
+                    VALUES (ST.NumerPracownika, ST.ImieINazwisko, ST.Specjalizacja, ST.KategoriaStazu, 1)
+            WHEN MATCHED
+                AND (ST.Specjalizacja <> TT.Specjalizacja
+                OR ST.KategoriaStazu <> TT.KategoriaStazu)
+            THEN
+                UPDATE SET TT.IsCurrent = 0;
+
+INSERT INTO Dim_Instruktor (NumerPracownika, ImieINazwisko, Specjalizacja, KategoriaStazu, IsCurrent)
+SELECT NumerPracownika, ImieINazwisko, Specjalizacja, KategoriaStazu, 1
+FROM vETLDim_Instruktor
+EXCEPT
+SELECT NumerPracownika, ImieINazwisko, Specjalizacja, KategoriaStazu, 1
+FROM Dim_Instruktor;
 
 DROP VIEW vETLDim_Instruktor;
 GO

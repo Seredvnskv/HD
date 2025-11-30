@@ -205,13 +205,13 @@ def generuj_T1(czlonkowie, instruktorzy, sale, typZajec, zajecia, zapis, opinie)
     write_excel("T1/Opinie.xlsx", ["NumerKartyCzlonkowskiej","NumerSali","DataZajec","Godzina","Ocena","Komentarz"], opinie)
 generuj_T1(czlonkowie, instruktorzy, sale, typZajec, zajecia, zapis, opinie)
 
-'''
+
 
 ## T2 ## 
 
-NOWE_ZAJECIA = 20
-NOWE_ZAPISY = 20
-NOWI_CZLONKOWIE = 5
+NOWE_ZAJECIA = 30
+NOWE_ZAPISY = 400
+NOWI_CZLONKOWIE = 30
 NOWI_INSTRUKTORZY = 5
 
 def czlonkowie_zmiany(czlonkowie, procent_zmiany=0.2):
@@ -222,7 +222,7 @@ def czlonkowie_zmiany(czlonkowie, procent_zmiany=0.2):
     for i in range(zakres_start, len(czlonkowie), 1):
         numer_czlonka, imie, nazwisko, _ = czlonkowie[i]
         czlonkowie[i][3] = generuj_email(imie, nazwisko, nowe_domeny)
-        print(f"Zmieniono emial czlonka o nr: {numer_czlonka}")
+        print(f"Zmieniono emial czlonka o nr: {numer_czlonka} na {czlonkowie[i][3]}")
     return czlonkowie
 
 def instruktorzy_zmiany(instruktorzy, procent_zmiany=0.2):
@@ -235,7 +235,7 @@ def instruktorzy_zmiany(instruktorzy, procent_zmiany=0.2):
         zmiana = [s for s in TYPY_ZAJEC if s != stara_specjalizacja]
         if zmiana:
             instruktorzy[i][3] = random.choice(zmiana)
-        print(f"Zmieniono specjalizacje instruktora o nr: {numer_pracownika}")
+        print(f"Zmieniono specjalizacje instruktora o nr: {numer_pracownika} z {stara_specjalizacja} na {instruktorzy[i][3]}")
     return instruktorzy
 
 def generuj_T2(czlonkowie, instruktorzy, sale, typZajec, zajecia, mapa_zajec, zapis, opinie):
@@ -265,6 +265,7 @@ def generuj_T2(czlonkowie, instruktorzy, sale, typZajec, zajecia, mapa_zajec, za
     write_csv("T2/TypZajec.csv", ["TypZajecID","Nazwa"], typZajec_T2)
     write_csv("T2/Zajecia.csv", ["ZajeciaID","NumerSali","NumerPracownika","TypZajecID","CzasTrwania","DataZajec","Godzina"], zajecia_T2)
     write_csv("T2/Zapis.csv", ["NumerKartyCzlonkowskiej","ZajeciaID","DataZapisu","StatusZapisu","Obecny"], zapis_T2)
+    write_csv("T2/Opinie.csv", ["NumerKartyCzlonkowskiej","NumerSali","DataZajec","Godzina","Ocena","Komentarz"], opinie_T2)
     write_excel("T2/Opinie.xlsx", ["NumerKartyCzlonkowskiej","NumerSali","DataZajec","Godzina","Ocena","Komentarz"], opinie_T2)
 
-generuj_T2(czlonkowie, instruktorzy, sale, typZajec, zajecia, mapa_zajec, zapis, opinie) '''
+generuj_T2(czlonkowie, instruktorzy, sale, typZajec, zajecia, mapa_zajec, zapis, opinie) 
